@@ -1,18 +1,18 @@
 <style>
 *{
-    font-size: 25px;
+    font-size: 3em;
 }
 </style>
 <?php
-$connection = new mysqli("localhost", "root", "", "base_sds");
+$conn = new mysqli("localhost", "root", "", "ufr_sds");
 
-if ($connection ->connect_error) {
-    echo "Connexion Echouer";
+if ($conn ->connect_error) {
+    echo "Connexion echouer";
     
 }
 
 else {
-    echo "";
+    echo "connexion reuisie";
 }
 
 ?>

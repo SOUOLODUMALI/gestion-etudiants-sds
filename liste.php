@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,10 +19,11 @@
          
           <th scope="col">nom</th>
           <th scope="col">prenom</th>
-          <th scope="col">age</th>
           <th scope="col">email</th>
-          <th scope="col">numero</th>
-          <th scope="col">debut</th>
+          <th scope="col">date de naissance</th>
+          <th scope="col">filiere</th>
+          <th scope="col">telephone</th>
+          <th scope="col">information du tuteur</th>
         </tr>
       </thead>
         ';
@@ -33,10 +34,11 @@
             
             <td>'.$data["nom"].'</td> 
             <td>'.$data["prenom"].'</td>  
-            <td>'.$data["date_de_naissance"].'</td>
             <td>'.$data["email"].'</td>
-            <td>'.$data["numero_de_telephone"].'</td>
-            <td>'.$data["date_d_abonnement"].'</td>
+            <td>'.$data["date de naissance"].'</td>
+            <td>'.$data["filiere"].'</td>
+            <td>'.$data["telephone"].'</td>
+            <td>'.$data["information du tuteur"].'</td>
           </tr>
             ';
         }
