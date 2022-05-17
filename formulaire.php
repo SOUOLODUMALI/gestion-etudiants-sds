@@ -24,17 +24,17 @@ inscrivez-vous cher adminstrateur
 
    
             <form action="./traitementadmin.php" method="post">
-           <!-- <legend for="">nom</legend> -->
+           <
             <input type="text" name="nom" class="col-6 offset-2" placeholder="nom"> <br> <br>
-            <!-- <legend for="">prenom</legend> -->
+          
             <input type="text" name="prenom" class="col-6 offset-2"  placeholder="prenom">  <br> <br>
-            <!-- <legend for="">telephone</legend> -->
+            
             <input type="number" name="telephone" class="col-6 offset-2" placeholder="telephone"> <br> <br>
-            <!-- <legend for=""> email</legend> -->
+            
             <input type="email" name="email" class="col-6 offset-2"  placeholder="email"> <br> <br>
-            <!-- <legend for="">pass</legend> -->
+            
             <input type="password" name="pass" class="col-6 offset-2"  placeholder="pass"> <br> <br>
-            <!-- <legend for="">cpass</legend> -->
+            
             <input type="password" name="cpass" class="col-6 offset-2"  placeholder="cpass"> <br> <br>
       
             <input class="col-6 offset-3"   type="submit" value="Enregistrer" name="submit">  
