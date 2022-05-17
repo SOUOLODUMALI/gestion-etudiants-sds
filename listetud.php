@@ -23,7 +23,7 @@
           <th scope="col">prenom</th>
           <th scope="col"></th>
           <th scope="col">email</th>
-          <th scope="col">numero de telephone</th>
+          <th scope="col"> telephone</th>
 
         </tr>
       </thead>

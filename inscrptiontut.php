@@ -35,7 +35,7 @@
             <input type="text" name="prenom" class="col-6 offset-3"> <br> <br>
             
             <input type="text" name="email"class="col-6 offset-3"> <br> <br>
-           
+            <legend for=""> telephone</legend>
             <input type="number" name="telephone" class="col-6 offset-3"> <br> <br>
         
             <input class="col-6 offset-3"   type="submit" value="Enregistrer" name="submit">  

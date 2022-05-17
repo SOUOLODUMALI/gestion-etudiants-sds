@@ -1,10 +1,6 @@
 <?php
-$query= "SELECT * FROM `tuteur` ORDER BY `telephone` DESC";
-$solution=mysqli_query($bdd, $query)
-
-
-?>
-
+include('./connexion.php');
+  ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,9 +12,6 @@ $solution=mysqli_query($bdd, $query)
     <title>inscriptionadmin</title>
 </head>
 <body>
-  <?php
-include('./connexion.php');
-  ?>
     <header>
     
     <img src="./images/Logo_Université_de_Ouagadougou.jpg" alt="logo" width="200" height="200">
@@ -27,45 +20,32 @@ include('./connexion.php');
       <div class="text">
        <h3> inscrivez-vous svp </h3>
       </div>
-    </div>
-    <div class="col-6 offset-2 mt-lg-4">
+    </div><br><br>
+    
     <form action="./tratitement_etud.php" method="post">
-<div class="form-floating">
-  <input type="text" class="form-control" id=""  name="nom" placeholder="nom">
-  <!-- <label for="floatingInput">nom</label> -->
-</div><br>
-<div class="form-floating mb-3">
-  <input type="text" class="form-control" id=""  name="prenom" placeholder="prenom">
-  
-</div><br>
-<div class="form-floating bg-dark mb-3">
-  <input type="email" class="form-control" id=""  name="email" placeholder="email">
-  
-</div><br>
-<div class="form-floating">
-  <input type="date" class="form-control" id=""  name="date_de_naissance" placeholder=" date naissance">
+         
+         <input type="text" name="nom" placeholder="nom" class="col-6 offset-3"> <br> <br>
+        
+         <input type="text" name="prenom" placeholder="prenom"  class="col-6 offset-3"> <br> <br>
+         
+         <input type="email" name="email" placeholder="email" class="col-6 offset-3"> <br> <br>
+        
+         <input type="date" name="date_de_naissance" placeholder="date"  class="col-6 offset-3"> <br> <br>
+         
+         <input type="text" name="filiere" placeholder="filiere"  class="col-6 offset-3"> <br> <br>
+         
+         <input type="number" name="telephone" placeholder="telephone"  class="col-6 offset-3"> <br> <br>
+        
 
-</div> <br>
-<div class="form-floating">
-  <input type="text" class="form-control"  name="filiere" id="" placeholder="filiere">
-  
-</div><br>
-<div class="form-floating">
-  <input type="number" class="form-control"  name="telephone" id="" placeholder="telephone">
-  
-</div> <br>
-
-,<div class="form-floating">
-  <input type="number" class="form-control" id="" name="imformation_du_tueur" placeholder="imformation_du_tueur">
-  
-</div> <br>
-
-  <select type="number" class="form-control" id=""  name="telephone">
+  <select type="select" class="form-control"   id=""  name="informatio_du_tuteur" placeholder="informatio_du_tuteur" >
    <?php
+   $query= "SELECT * FROM `tuteur` ORDER BY `telephone` DESC";
+   $solution=mysqli_query($conn, $query);
+   
 
    while($lign=mysqli_fetch_assoc($solution)){
      
-     echo"<option value ='$lign[telephone]'>$lign[telephone] </option>";
+     echo"<option value ='$lign[telephone]'>$lign[email] </option>";
    }
    ?>
    
