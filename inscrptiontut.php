@@ -29,14 +29,14 @@
    
     
     <form action="./traitementut.php" method="post">
-           <legend for="">nom</legend>
-            <input type="text" name="nom" class="col-6 offset-3> <br> <br>
-            <legend for="">prenom</legend>
-            <input type="text" name="prenom" class="col-6 offset-3> <br> <br>
-            <legend for="">email</legend>
+         
+            <input type="text" name="nom" class="col-6 offset-3"> <br> <br>
+           
+            <input type="text" name="prenom" class="col-6 offset-3"> <br> <br>
+            
             <input type="text" name="email"class="col-6 offset-3"> <br> <br>
-            <legend for=""> telephone</legend>
-            <input type="number" name="telephone" class="col-6 offset-3> <br> <br>
+           
+            <input type="number" name="telephone" class="col-6 offset-3"> <br> <br>
         
             <input class="col-6 offset-3"   type="submit" value="Enregistrer" name="submit">  
 </form>

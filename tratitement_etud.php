@@ -45,8 +45,7 @@ $query=' INSERT INTO tuteur ( nom , prenom , email ,date_de_naissance, filiere, 
 
       $res=mysqli_query($conn, $query);
 
-     SELECT conbine.te.information_du_tuteur FROM conbine INNER JOIN tuteur 
-WHERE conbine.email = tuteur.email 
+ 
      
      
     }
