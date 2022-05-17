@@ -48,7 +48,8 @@ if($pass != $cpass ){
 $query=' INSERT INTO sds_admin ( nom , prenom , telephone ,  email , pass )
       VALUES ( "'.$nom.'", "'.$prenom.'", "'.$telephone.'", "'.$email.'", "'.$pass.'")'
         or die('erreur:'.mysql_error());
-      $res=mysqli_query($conn, $query);
+      
+        $res=mysqli_query($conn, $query);
     
     
    

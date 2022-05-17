@@ -20,17 +20,17 @@
   </div>
 
   
-    <form action="" method="post">
+    <form action="./traitementconn.php" method="post">
 <div class="form form-floating col-6 offset-3">
-  <input type="text" class="form-control" id="floatingPassword" placeholder="email">
-  <label for="floatingPassword">email</label>
+  <input type="text" class="form-control" id="floatingPassword" name="email" placeholder="email">
+  <label for="floatingEmail">email</label>
 </div> <br><br>
 <div class="form-floating col-6 offset-3">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  <label for="floatingPassword"> password</label>
+  <input type="password" class="form-control" id="floatingPassword" name="pass" placeholder="Pass">
+  <label for="floatingPassword"> pass</label>
 </div> <br><br>
 <div class="col-6 offset-3">
-    <button type="submit" class="btn btn-primary">connecter</button>
+    <button type="submit" name="connecter" class="btn btn-primary">connecter</button>
   </div><br><br>
 </form>
 </body>

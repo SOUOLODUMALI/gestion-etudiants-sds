@@ -40,6 +40,7 @@ include('./connexion.php');
   <select type="select" class="form-control"   id=""  name="informatio_du_tuteur" placeholder="informatio_du_tuteur" >
    <?php
    $query= "SELECT * FROM `tuteur` ORDER BY `telephone` DESC";
+   
    $solution=mysqli_query($conn, $query);
    
 
