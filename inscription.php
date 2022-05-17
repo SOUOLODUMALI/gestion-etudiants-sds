@@ -13,48 +13,48 @@
 include('./connexion.php');
   ?>
     <header>
-        <div>
+    
     <img src="./images/Logo_Université_de_Ouagadougou.jpg" alt="logo" width="200" height="200">
-        </div>
     </header>
     <div class="border col-6 offset-2 mt-lg-5 p-3 bg-secondary" >
-      <div id="text">
-        inscrivez-vous svp
+      <div class="text">
+       <h3> inscrivez-vous svp </h3>
       </div>
     </div>
     <div class="col-6 offset-2 mt-lg-4">
-    <form action="traititement_etud.php" method="post">
+    <form action="./tratitement_etud.php" method="post">
 <div class="form-floating">
-  <input type="text" class="form-control" id="" placeholder="text">
-  <label for="floatingInput">nom</label>
-</div><br><br>
+  <input type="text" class="form-control" id="" placeholder="nom">
+  <!-- <label for="floatingInput">nom</label> -->
+</div><br>
 <div class="form-floating mb-3">
-  <input type="text" class="form-control" id="" placeholder="text">
-  <label for="floatingInput">prenom</label>
-</div><br><br>
+  <input type="text" class="form-control" id="" placeholder="prenom">
+  <!-- <label for="floatingInput">prenom</label> -->
+</div><br>
 <div class="form-floating bg-dark mb-3">
-  <input type="email" class="form-control" id="" placeholder="name@example.com">
-  <label for="floatingInput">email</label>
-</div><br><br>
+  <input type="email" class="form-control" id="" placeholder="email">
+  <!-- <label for="floatingInput">email</label> -->
+</div><br>
 <div class="form-floating">
-  <input type="date" class="form-control" id="" placeholder="date">
-  <label for="floatingDate">date de naissance</label>
-</div> <br><br>
+  <input type="date" class="form-control" id="" placeholder=" date naissance">
+  <!-- <label for="floatingDate">date de naissance</label> -->
+</div> <br>
 <div class="form-floating">
-  <input type="text" class="form-control" id="" placeholder="text">
-  <label for="floatingInput">filiere</label>
-</div><br><br>
+  <input type="text" class="form-control" id="" placeholder="filiere">
+  <!-- <label for="floatingInput">filiere</label> -->
+</div><br>
 <div class="form-floating">
-  <input type="number" class="form-control" id="" placeholder="number">
-  <label for="floatingNumber">telephone</label>
-</div> <br><br>
+  <input type="number" class="form-control" id="" placeholder="telephone">
+  <!-- <label for="floatingNumber">telephone</label> -->
+</div> <br>
 
             <div class="form-group">
-   <label for="person">information du tuteur:</label> 
+            <!-- <input type="option" class="form-control" id="" placeholder="infos tuteur"> -->
+   <!-- <label for="person">information du tuteur:</label>  -->
   <select class="form-control" id="" required="true" name="person">
    
    
-    </form>
+    
     <option value="VG">nom du tuteur</option>
     <option value="VI">prenom du tuteur</option>
     <option value="WF">email du tuteur</option>
@@ -73,9 +73,27 @@ include('./connexion.php');
     </form>
 
     <div class="col-auto">
-    </div>
-        <button type="submit" class="btn btn-primary">enregistrer</button>
-      </div><br><br>
+    </div class="foot">
+        <button type="submit" class="btn btn-secondary">enregistrer</button>
+      </div><br>
+
+      </div class="">
+           <a href="inscription.php"> <button  type="submit" class="btn btn-secondary">retour</button></a>
+</div><br><br>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+           <div class="col">
+  <div class="foot">
+   <h3> unite  progres  justice</h3>
+   </div>
+   </div>
+  </div>
+  </div>
+</footer>
+
+
 </body>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

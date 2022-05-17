@@ -33,7 +33,7 @@ if(isset($_POST["submit"])) {
    
  
 
-$query=' INSERT INTO tuteur ( nom , prenom , email , telephone )
+$query= ' INSERT INTO tuteur ( nom , prenom , email , telephone )
       VALUES ( "'.$nom.'", "'.$prenom.'",  "'.$email.'","'.$telephone.'")'
         or die('erreur:'.mysql_error());
 

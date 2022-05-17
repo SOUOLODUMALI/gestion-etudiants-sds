@@ -7,13 +7,13 @@
    
 }
 
-body{
+ body{
    
     background-repeat: no-repeat;
     background-size: cover;
 background-image: url('./pngtree-blue-university-graduation-season-ps-source-file-h5-background-material-picture-image_1003126.jpg');
 }
-#text{
+.text{
     text-align: center;
 }
 header{
@@ -36,18 +36,18 @@ header{
     align-items: center;
    
 }
-.buton {
+ .buton {
 margin-left: 10%;
 display: flex;
 }
  .submit{ 
   margin: 10%; 
     
-} 
+ }   
  
  
  /* authentification */
- .connexion{
+  .connexion{
     border:2px solid rgb(41, 72, 211) ;
     border-radius: 8px;
     background-color:#ffff;
@@ -56,27 +56,22 @@ display: flex;
 }
 .form{
     margin-top: 10% !important;
-}
+} 
 
 /* formulaire */
-/* .taille{
-    margin-top: 10% !important;
-    font-size: 2em !important;
-    text-align: center !important;
-    
-} */
-.form-control{
-    /* text-align: center !important; */
-}
+
+  .forms{
+    text-align: center;
+} 
 
  .inscription{
     text-align: center;
-    margin-top: 10%;
+     margin-top: 10%; 
     border: 1px solid #ffff;
     border-radius: 8px;
     background-color: #ffff;
-    margin-left: 30%;
-     margin-right: 30% 
+    /* margin-left: 30%;
+     margin-right: 30%  */
 } 
 
 /* adminstrateur */
@@ -95,4 +90,18 @@ display: flex;
  border-radius: 25%;  
   
 }
+footer{
+    border: 1px solid rgb(0, 0, 5) ;
+    color: black;
+    background-color: rgb(11, 11, 227);
+    /* height: 100px; */
+    
 
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+ 

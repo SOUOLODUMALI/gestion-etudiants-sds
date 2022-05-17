@@ -15,14 +15,14 @@
 
   <div class="connexion col-6 offset-3 ">
     <h2>
-      CONNCETEZ-VOUS SVP
+      CONNECTEZ-VOUS SVP
     </h2>
   </div>
 
   
     <form action="" method="post">
 <div class="form form-floating col-6 offset-3">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <input type="text" class="form-control" id="floatingPassword" placeholder="email">
   <label for="floatingPassword">email</label>
 </div> <br><br>
 <div class="form-floating col-6 offset-3">

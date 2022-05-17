@@ -28,7 +28,7 @@ if(isset($_POST["submit"])) {
    $telephone=($_POST["informateur_du_tuteur"]);
   
 
-    
+  
 
 
  if(!empty($nom) AND !empty($prenom)
@@ -44,7 +44,9 @@ $query=' INSERT INTO tuteur ( nom , prenom , email ,date_de_naissance, filiere, 
         or die('erreur:'.mysql_error());
 
       $res=mysqli_query($conn, $query);
-  
+
+     SELECT conbine.te.information_du_tuteur FROM conbine INNER JOIN tuteur 
+WHERE conbine.email = tuteur.email 
      
      
     }

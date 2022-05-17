@@ -15,30 +15,48 @@
     include('./connexion.php');
     ?>
     <header>
-        <div>
+      
     <img src="./images/Logo_Université_de_Ouagadougou.jpg" alt="logo" width="200" height="200">
-        </div>
+        
     </header>
     <div class="border col-6 offset-2 mt-lg-5 p-3 bg-secondary" >
-      <div id="text">
+      <div class="text">
+        <h3>
         inscrivez-vous svp
+        </h3>
       </div>
-    </div>
+    </div><br> <br>
    
     
     <form action="./traitementut.php" method="post">
            <legend for="">nom</legend>
-            <input type="text" name="nom" id=""> <br> <br>
+            <input type="text" name="nom" class="col-6 offset-3> <br> <br>
             <legend for="">prenom</legend>
-            <input type="text" name="prenom" id=""> <br> <br>
+            <input type="text" name="prenom" class="col-6 offset-3> <br> <br>
             <legend for="">email</legend>
-            <input type="text" name="email" id=""> <br> <br>
+            <input type="text" name="email"class="col-6 offset-3"> <br> <br>
             <legend for=""> telephone</legend>
-            <input type="number" name="telephone"> <br> <br>
+            <input type="number" name="telephone" class="col-6 offset-3> <br> <br>
         
             <input class="col-6 offset-3"   type="submit" value="Enregistrer" name="submit">  
-   
-
+</form>
+<div class="col-auto">
+    </div class="foot">
+           <a href="./inscription"> <button  type="submit" class="btn btn-secondary ml-5">suivant</button>
+           </a>
+          </div>
+    </div><br> <br>
+            <footer>
+        <div class="container">
+          <div class="row">
+           <div class="col">
+  <div class="pied">
+   <h3> unite  progres  justice</h3>
+   </div>
+   </div>
+  </div>
+  </div>
+</footer>
 </body>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
