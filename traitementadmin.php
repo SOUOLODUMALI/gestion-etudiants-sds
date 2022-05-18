@@ -57,27 +57,6 @@ $query=' INSERT INTO sds_admin ( nom , prenom , telephone ,  email , pass )
 }
 header("location: authentification.php");
  
-//  else {
-//      echo"c'est pas bien"
-
-
-     
-//    exit;
-// }
-
-
-    // echo"erreur sur le mot de pass";
-    
-    // header("location: ./index.php"); 
-    // exit;
-
-    
-
-
 ?>
 </body>
 </html>
-<!-- header('location:login.php?inscription=1');
-        }
-        else{
-            $non = 1; -->

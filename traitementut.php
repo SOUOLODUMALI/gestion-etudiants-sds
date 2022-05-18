@@ -13,7 +13,7 @@
 <?php
 
 
-include("./connexion.php");
+ include("./connexion.php");
 
 $conn=mysqli_connect('localhost','root','','ufr_sds')or die("error");
 
@@ -22,7 +22,7 @@ if(isset($_POST["submit"])) {
     $nom=( $_POST["nom"]);
     $prenom=($_POST["prenom"]);
     $email=($_POST["email"]);
-   $telephone=($_POST["telephone"]);
+    $telephone=($_POST["telephone"]);
 
     
 
@@ -45,7 +45,7 @@ $query= ' INSERT INTO tuteur ( nom , prenom , email , telephone )
 
 
   } 
-  header("location: ./index.php"); 
+  header("location: ./adminstrateur.php"); 
  
   
 

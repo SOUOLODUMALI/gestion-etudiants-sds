@@ -10,19 +10,19 @@
 <body>
     
    <?php 
-include('./connexion.php');
+   include('./connexion.php');
 
 if(isset($_POST["connecter"])) {
 
-$email= $_REQUEST["email"];
-$pass = $_REQUEST["pass"];
-$query= "SELECT * FROM `sds_admin` WHERE email='$email' AND pass='$pass' ";
+     $email= $_REQUEST["email"];
+     $pass = $_REQUEST["pass"];
+     $query= "SELECT * FROM `sds_admin` WHERE email='$email' AND pass='$pass' ";
 
-$verif=mysqli_query($conn,$query)or die( mysql_error());
-$rows = mysqli_num_rows($verif);
-if($rows==1){
+  $verif = mysqli_query($conn,$query)or die( mysql_error());
+  $rows = mysqli_num_rows($verif);
+if($rows==1){  
     $_SESSION["email"]=$email;
-    header("Location: index.php");
+    header("Location: adminstrateur.php");
     
        }
 

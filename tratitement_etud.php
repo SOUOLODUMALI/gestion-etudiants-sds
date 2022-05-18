@@ -16,9 +16,13 @@ if(isset($_POST["submit"])){
      $query=' INSERT INTO cobine ( nom , prenom , email , date_de_naissance , filiere , telephone , informatio_du_tuteur )
        VALUES ( "'.$nom.'", "'.$prenom.'",  "'.$email.'",  "'.$date_de_naissance.'",   "'.$filiere.'", "'.$telephone.'",  "'.$informatio_du_tuteur.'")'
         or die('erreur:'.mysql_error());
+
         $res=mysqli_query($conn, $query);
-       if($res){
-         echo "Votre inscription a reuissir ";
+       
+        if($res){
+
+         echo "Votre inscription a reuissi ";
+         header("location:adminstrateur.php");
        }
        else{
          echo "Votre inscription a echouer";

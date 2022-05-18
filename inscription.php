@@ -12,15 +12,30 @@ include('./connexion.php');
     <title>inscriptionadmin</title>
 </head>
 <body>
-    <header>
+    <header class="">
     
-    <img src="./images/Logo_Université_de_Ouagadougou.jpg" alt="logo" width="200" height="200">
+      <img src="./images/Logo_Université_de_Ouagadougou.jpg" alt="logo" width="200" height="200">
     </header>
-    <div class="border col-6 offset-2 mt-lg-5 p-3 bg-secondary" >
-      <div class="text">
-       <h3> inscrivez-vous svp </h3>
-      </div>
-    </div><br><br>
+
+      <div class="border col-6 offset-4 mt-5 pb-3 bg-secondary" >
+          <div class="text col-6 ">
+<div class="container"><br><br>
+  <div class="row">
+    <div class="col">
+
+    <h3>
+       inscrivez-vous svp
+       <h1>
+           &#128526;
+        </h1>
+       </h3>
+    </div>
+  </div>
+</div>
+            
+           </div>
+        </div>
+      <br><br>
     
     <form action="./tratitement_etud.php" method="post">
          
@@ -37,46 +52,50 @@ include('./connexion.php');
          <input type="number" name="telephone" placeholder="telephone"  class="col-6 offset-3"> <br> <br>
         
 
-  <select type="select" class="form-control"   id=""  name="informatio_du_tuteur" placeholder="informatio_du_tuteur" >
-   <?php
-   $query= "SELECT * FROM `tuteur` ORDER BY `telephone` DESC";
+  <select type="select" class="col-6 offset-3"   id=""  name="informatio_du_tuteur" placeholder="informatio_du_tuteur" >
+    <?php
+        $query= "SELECT * FROM `tuteur` ORDER BY `telephone` DESC";
    
-   $solution=mysqli_query($conn, $query);
+        $solution=mysqli_query($conn, $query);
    
-
-   while($lign=mysqli_fetch_assoc($solution)){
+      while($lign=mysqli_fetch_assoc($solution)){
      
-     echo"<option value ='$lign[telephone]'>$lign[email] </option>";
-   }
+        echo"<option value ='$lign[telephone]'>$lign[email] </option>";
+      }
    ?>
    
    
   </select>
 
                    
-<br>
-   
+<br><br>
+  
 
     <div class="col-auto">
-    </div class="foot">
-    <input class="col-6 offset-3"   type="submit" value="Enregistrer" name="submit">  
-      </div><br>
-      </form>
-      </div class="">
+      </div class="foot">
+        <button  type="submit" class="btn btn-primary col-2 offset-4"   name="submit">Enregistrer  </button>
+        </div><br>
+ </form>
+       </div>
            <a href="inscription.php"> <button  type="submit" class="btn btn-secondary">retour</button></a>
-</div><br><br>
+      </div><br><br>
 
-      <footer>
+    <footer>
         <div class="container">
           <div class="row">
            <div class="col">
-  <div class="foot">
-   <h3> unite  progres  justice</h3>
-   </div>
-   </div>
-  </div>
-  </div>
-</footer>
+            <div class="foot">
+               <h3> unite  progres  justice</h3>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="fouter">
+    <p>contact:(+226)57000003</p>
+   
+      <p>email: bedjick@gmail.com<p>
+</div>
+      </footer>
 
 
 </body>
